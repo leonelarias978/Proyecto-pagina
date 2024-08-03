@@ -1,28 +1,36 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    
+    
+    
 }
 
-header {
+header{
+    padding: 20px 100px;
+    top: 0;
+    left: 0;
     background-color: black;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
 }
 
 .logo {
     display: flex;
     margin-top: 0;
-    
     color: black;
     text-decoration: none;
-    
     height: 100px;
     width: 150px;
     
 }
+
+
 
 .navbar a{
     position: relative;
@@ -39,7 +47,8 @@ background: red;
 
 main {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-image: url(Supermercado.jpg);
+    background-size: cover;
 }
 
 .contenedor-imagen{
@@ -86,7 +95,7 @@ main {
 }
 
 #buy-button:hover {
-    background-color: #0056b3;
+    background-color: red;
 }
 
 #message {
