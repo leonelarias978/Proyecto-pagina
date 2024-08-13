@@ -1,4 +1,4 @@
-let nombre = document.getElementById("nombre");
+let nombre = document.getElementById("nombre"); 
 let apellido = document.getElementById("apellido");
 let email = document.getElementById("email");
 let telefono = document.getElementById("tel");
@@ -6,14 +6,18 @@ let textarea = document.getElementById("text");
 let btn= document.getElementById("descargar");
 let informacion = [];
 
-telefono.addEventListener("keypress", (e) => {
-    const expre =/[0-9]/;
-    if(!expre.test(e.key)) e.preventDefault();
+// telefono.addEventListener("keypress", (e) => {
+//     const expre =/[0-9]/;
+//     if(!expre.test(e.key)) e.preventDefault();
 
-})
+
+// })
+
 
 btn.addEventListener("click", (e) => {
-    e.preventDefault(); // previene la accion del form de actualizar la pagina
+    e.preventDefault(); //  asegura que la acción predeterminada no se llevará a cabo si decides que no debe hacerlo (prevengo que se envie el formulario,hago referencia a el debido al evento bubbling)
+
+    
     informacion[0] = nombre.value;
     informacion[1] = apellido.value;
     informacion[2] = email.value;

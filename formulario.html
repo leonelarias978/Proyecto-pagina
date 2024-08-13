@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -11,7 +11,7 @@
         
           
       <a class="logo" href="home.html"><img src="https://img.freepik.com/vector-premium/compre-icono-linea-vector-minimo-boton-3d-aislado-sobre-fondo-negro-vector-premium_570929-2512.jpg" alt=""></a>
-   
+
 
     <nav class="navbar">
       <a href="home.html">Inicio</a>
@@ -23,19 +23,22 @@
     <div class="formulario">
         <div class="centrar">
     <form class="form">
+      
         <h2 class="titulo">Formulario de contacto</h2>
+        
         <label class="label" for="name">Nombre</label>
-        <input class="controles" type="text" id="nombre" placeholder="  Ingrese nombre">
+        <input required class="controles" type="text" id="nombre"  placeholder=" Ingrese nombre" required>
         <label class="label for="name">Apellido</label>
-        <input class="controles" type="text" id="apellido" placeholder="  Ingrese Apellido">
+        <input class="controles" type="text" id="apellido" placeholder="  Ingrese Apellido"required>
         <label class="label for="name">Email</label>
-        <input class="controles" type="email" id="email" placeholder="  Ingrese email">
+        <input class="controles" type="email" id="email" placeholder="  Ingrese email"required>
         <label class="label" for="tel">Telofono</label>
-        <input class="controles" type="tel" id="tel" placeholder="  Ingrese Telofono">
+        <input class="controles" type="tel" id="tel" placeholder="  Ingrese Telofono"required>
         <label class="label for="text">Consultas</label>
-        <textarea class="boton" name="text" id="text" placeholder="Ingrese su consulta"></textarea>
-        <input class="enviar" type="submit" id="descargar" value="Enviar">
+        <textarea class="boton" name="text" id="text" placeholder="Ingrese su consulta"required></textarea>
+        <button class="enviar">Enviar</button>
     </form>
+    
     
 </div>
 </div>
@@ -43,6 +46,7 @@
   <p>&copy; Supermercado Andresito</p>
 </footer>
 <script src="formulario.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> 
+<!-- Incluye  biblioteca JavaScript externa llamada FileSaver.js desde un CDN. Proporciona funcionalidad para guardar archivos en el cliente y permite a los usuarios descargar archivos generados en el navegador. -->
   </body>
 </html>
